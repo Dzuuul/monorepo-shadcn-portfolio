@@ -1,10 +1,10 @@
 {
-  "name": "web",
+  "name": "cms",
   "version": "0.0.1",
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 18080 --turbopack",
+    "dev": "next dev --port 15000 --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
