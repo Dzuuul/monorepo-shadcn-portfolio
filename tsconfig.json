@@ -1,4 +1,11 @@
 {
-  "extends": "@workspace/typescript-config/base.json"
+  "extends": "@workspace/typescript-config/base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist", // output ke folder dist, bukan src
+    "rootDir": "src",
+    "emitDeclarationOnly": false // kalau mau emit JS & d.ts
+  },
+  "files": [],
+  "references": [{ "path": "packages/mocks" }, { "path": "packages/ui" }]
 }
-
