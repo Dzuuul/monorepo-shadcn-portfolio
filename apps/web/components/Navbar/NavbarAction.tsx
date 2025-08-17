@@ -1,8 +1,9 @@
 "use client";
 
 import { Languages, Moon, Sun } from "lucide-react";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import Link from "next/link"; // Mengembalikan Link ke next/link
+import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 import {
   NavigationMenu,
@@ -16,7 +17,13 @@ import type { NavbarActionItem } from "@workspace/mocks";
 
 import mocks from "@workspace/mocks";
 import { Button } from "@workspace/ui/components/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuTrigger } from "@workspace/ui/components/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@workspace/ui/components/dropdown-menu";
 const navbarAction: NavbarActionItem[] = mocks.navbarAction;
 
 const handleClickButton = (sectionId: string) => {
@@ -28,14 +35,7 @@ const handleClickButton = (sectionId: string) => {
 
 export function NavbarAction() {
   const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    // Cek preferensi awal
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setIsDark(true);
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
+  const t = useTranslations();
 
   const toggleTheme = () => {
     setIsDark((prev) => {
@@ -68,7 +68,7 @@ export function NavbarAction() {
                 variant="outline"
                 onClick={() => handleClickButton(item.href)}
               >
-                {item.label}
+                {t(item.label as any)}
               </Button>
             ) : item.type === "dropdown" ? (
               <div>
@@ -82,7 +82,7 @@ export function NavbarAction() {
                     <DropdownMenuGroup>
                       {item.localization?.map((lang) => (
                         <DropdownMenuItem key={lang.id}>
-                          <Link href={`/${lang.code}`}>
+                          <Link href={`/${lang.code}`} scroll={false}>
                             <img
                               src={lang.flag}
                               alt={lang.name}
@@ -103,7 +103,9 @@ export function NavbarAction() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link href={item.href}>{item.label}</Link>
+                <Link href={item.href} scroll={false}>
+                  {t(item.label as any)}
+                </Link>
               </NavigationMenuLink>
             )}
           </NavigationMenuItem>

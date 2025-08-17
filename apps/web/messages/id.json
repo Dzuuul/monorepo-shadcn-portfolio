@@ -1,0 +1,19 @@
+{
+  "Navbar": {
+    "home": "Beranda",
+    "about": "Tentang Saya",
+    "projects": "Project",
+    "skills": "Keterampilan",
+    "services": "Layanan",
+    "blog": "Blog",
+    "contact": "Kontak Saya",
+    "letsTalk": "Mari Bicara"
+  },
+  "Home": {
+    "greeting": "Hai, Saya Fikri 👋",
+    "subTitle": "Saya membuat dan mengembangkan solusi web fullstack untuk berbagai kebutuhan",
+    "content": "Spesialis di teknologi modern seperti Next.js dan NestJS untuk membangun aplikasi yang cepat, mudah dikembangkan, dan siap berkembang.",
+    "downloadButton": "Download CV",
+    "exploreButton": "Jelajahi Project Saya"
+  }
+}

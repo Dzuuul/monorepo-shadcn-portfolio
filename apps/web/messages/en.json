@@ -1,0 +1,19 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "skills": "Skills",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact Me",
+    "letsTalk": "Let's Talk"
+  },
+  "Home": {
+    "greeting": "Hi, I'm Fikri 👋",
+    "subTitle": "I create and develop fullstack web solutions for diverse needs",
+    "content": "Specializing in modern technologies like Next.js and NestJS to deliver fast, scalable, and maintainable applications.",
+    "downloadButton": "Download CV",
+    "exploreButton": "Explore My Project"
+  }
+}
