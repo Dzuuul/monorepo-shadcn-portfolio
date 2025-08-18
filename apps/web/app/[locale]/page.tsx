@@ -1,4 +1,4 @@
-import { Home } from "@/components/Home";
+import { Hero, Home } from "@/components/Home";
 import { AboutMe } from "@/components/AboutMe";
 import { AppHeader } from "@/components/Navbar";
 

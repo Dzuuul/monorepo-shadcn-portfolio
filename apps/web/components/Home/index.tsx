@@ -9,7 +9,6 @@ import { Button } from "@workspace/ui/components/button";
 import SubTitle from "../Typography/SubTitle";
 import SVGs from "./SVGs";
 import Greetings from "./Greetings";
-import CardSlider from "./CardSlider";
 
 export function Home() {
   const t = useTranslations("Home");
@@ -29,7 +28,6 @@ export function Home() {
         </div>
       </div>
       <SVGs />
-      <CardSlider />
     </section>
   );
 }

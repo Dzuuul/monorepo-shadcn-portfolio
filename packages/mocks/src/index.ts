@@ -1,4 +1,4 @@
-export const mockNavbarMenu = [
+const mockNavbarMenu = [
   {
     id: 1,
     label: "Navbar.home",
@@ -43,7 +43,7 @@ export const mockNavbarMenu = [
   },
 ];
 
-export const mockNavbarAction = [
+const mockNavbarAction = [
   {
     id: 1,
     label: "",
@@ -85,4 +85,56 @@ export const mockNavbarAction = [
   },
 ];
 
-export default { navbarMenu: mockNavbarMenu, navbarAction: mockNavbarAction };
+const mockProjectMenu = [
+  {
+    id: 1,
+    label: "Landing Page",
+    value: "landing-page",
+    src: "https://raw.githubusercontent.com/fikriismail/monorepo-shadcn-portfolio/main/apps/web/public/images/landing-page.png",
+    order: 1,
+  },
+  {
+    id: 2,
+    label: "Company Profile",
+    value: "company-profile",
+    order: 2,
+  },
+  {
+    id: 3,
+    label: "Dashboard CMS",
+    value: "dashboard-cms",
+    order: 3,
+  },
+  {
+    id: 4,
+    label: "LMS",
+    value: "lms",
+    order: 4,
+  },
+  {
+    id: 5,
+    label: "HRIS",
+    value: "hris",
+    order: 5,
+  },
+  {
+    id: 6,
+    label: "eCommerce",
+    value: "ecommerce",
+    order: 6,
+  },
+  {
+    id: 7,
+    label: "Blog",
+    value: "blog",
+    order: 7,
+  },
+  {
+    id: 8,
+    label: "Custom Website",
+    value: "custom-website",
+    order: 8,
+  },
+];
+
+export default { navbarMenu: mockNavbarMenu, navbarAction: mockNavbarAction, projectMenu: mockProjectMenu };
