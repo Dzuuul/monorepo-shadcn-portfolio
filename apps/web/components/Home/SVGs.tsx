@@ -44,7 +44,7 @@ export default function SVGs() {
           width={170}
           height={170}
           alt="Preview Porto"
-          className="z-0 absolute translate-x-[-20%] top-[200]"
+          className="z-0 absolute translate-x-[-40%] top-[200] dark:hidden"
         />
       </div>
       <div ref={rightArrowRef}>
@@ -53,7 +53,7 @@ export default function SVGs() {
           width={170}
           height={170}
           alt="Preview Porto"
-          className="z-0 absolute -translate-x-[-180%] top-[200]"
+          className="z-0 absolute -translate-x-[-200%] top-[200] dark:hidden"
         />
       </div>
     </div>

@@ -20,7 +20,7 @@ export function Home() {
           <Greetings text={t("greeting")} />
           <SubTitle text={t("subTitle")} />
           <Paragraph text={t("content")} />
-          <div className="flex gap-2 mb-15">
+          <div className="flex gap-2 mb-10">
             <Button variant="outline">{t("downloadButton")}</Button>
             <Button>{t("exploreButton")}</Button>
           </div>

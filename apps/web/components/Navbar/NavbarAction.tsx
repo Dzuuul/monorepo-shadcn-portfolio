@@ -5,6 +5,8 @@ import Link from "next/link"; // Mengembalikan Link ke next/link
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
+import { AnimatedThemeToggler } from "@workspace/ui/components/magicui/animated-theme-toggler";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -58,10 +60,10 @@ export function NavbarAction() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={toggleTheme}
                 aria-label="Toggle theme"
+                asChild
               >
-                {isDark ? <Sun size={20} /> : <Moon size={20} />}
+                <AnimatedThemeToggler />
               </Button>
             ) : item.type === "button" ? (
               <Button

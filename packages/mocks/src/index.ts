@@ -90,7 +90,7 @@ const mockProjectMenu = [
     id: 1,
     label: "Landing Page",
     value: "landing-page",
-    src: "https://raw.githubusercontent.com/fikriismail/monorepo-shadcn-portfolio/main/apps/web/public/images/landing-page.png",
+    src: "",
     order: 1,
   },
   {
@@ -137,4 +137,8 @@ const mockProjectMenu = [
   },
 ];
 
-export default { navbarMenu: mockNavbarMenu, navbarAction: mockNavbarAction, projectMenu: mockProjectMenu };
+export default {
+  navbarMenu: mockNavbarMenu,
+  navbarAction: mockNavbarAction,
+  projectMenu: mockProjectMenu,
+};
